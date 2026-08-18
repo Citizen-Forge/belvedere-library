@@ -1,0 +1,12 @@
+id: core/container-platform
+name: Container Platform
+root: software
+extends: core/software
+icon: container
+description: A platform that runs containers, e.g. Docker Engine or a Kubernetes node.
+version: 0.1.0
+attributes:
+  - key: runtime
+    label: Runtime
+    dataType: enum
+    options: [docker, containerd, cri-o, other]

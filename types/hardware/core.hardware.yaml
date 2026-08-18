@@ -1,0 +1,14 @@
+id: core/hardware
+name: Hardware
+root: hardware
+extends: null
+icon: hardware
+description: Root type for anything that is a physical device.
+version: 0.1.0
+attributes:
+  - key: manufacturer
+    label: Manufacturer
+    dataType: string
+  - key: model
+    label: Model
+    dataType: string

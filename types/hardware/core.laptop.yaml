@@ -1,0 +1,19 @@
+id: core/laptop
+name: Laptop
+root: hardware
+extends: core/hardware
+icon: laptop
+description: A portable computer.
+version: 0.1.0
+attributes:
+  - key: cpu
+    label: CPU
+    dataType: string
+  - key: ramGb
+    label: RAM
+    dataType: number
+    unit: GB
+  - key: screenSizeInches
+    label: Screen size
+    dataType: number
+    unit: in

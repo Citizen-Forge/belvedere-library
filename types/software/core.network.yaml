@@ -1,0 +1,14 @@
+id: core/network
+name: Network
+root: software
+extends: core/software
+icon: network
+description: A logical network (subnet/VLAN). Interfaces and other assets record membership as a CONNECTS_TO edge targeting this asset.
+version: 0.1.0
+attributes:
+  - key: cidr
+    label: CIDR block
+    dataType: string
+  - key: vlanId
+    label: VLAN ID
+    dataType: number

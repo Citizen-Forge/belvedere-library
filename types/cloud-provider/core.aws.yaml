@@ -1,0 +1,11 @@
+id: core/aws
+name: Amazon Web Services
+root: cloud-provider
+extends: core/cloud-provider
+icon: aws
+description: Amazon Web Services.
+version: 0.1.0
+attributes:
+  - key: region
+    label: Region
+    dataType: string

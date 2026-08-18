@@ -1,0 +1,18 @@
+id: core/switch
+name: Switch
+root: hardware
+extends: core/hardware
+icon: switch
+description: A physical network switch.
+version: 0.1.0
+attributes:
+  - key: portCount
+    label: Port count
+    dataType: number
+  - key: portSpeedGbps
+    label: Port speed
+    dataType: number
+    unit: Gbps
+  - key: managed
+    label: Managed
+    dataType: boolean

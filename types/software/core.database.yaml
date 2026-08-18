@@ -1,0 +1,15 @@
+id: core/database
+name: Database
+root: software
+extends: core/software
+icon: database
+description: A database engine or service.
+version: 0.1.0
+attributes:
+  - key: engine
+    label: Engine
+    dataType: enum
+    options: [postgres, mysql, neo4j, mongodb, sqlite, other]
+  - key: defaultPort
+    label: Default port
+    dataType: number

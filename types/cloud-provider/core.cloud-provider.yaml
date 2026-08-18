@@ -1,0 +1,11 @@
+id: core/cloud-provider
+name: Cloud Provider
+root: cloud-provider
+extends: null
+icon: cloud
+description: Root type for third-party cloud/hosting providers and the managed services they offer.
+version: 0.1.0
+attributes:
+  - key: accountId
+    label: Account ID
+    dataType: string

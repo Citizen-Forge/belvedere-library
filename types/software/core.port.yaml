@@ -1,0 +1,18 @@
+id: core/port
+name: Port
+root: software
+extends: core/software
+icon: port
+description: A network port a service or container listens on. Hosted by the software that exposes it (HOSTS); a client connecting to it is represented as a CONNECTS_TO edge targeting this asset, not the software directly, so the specific port used is explicit in the graph.
+version: 0.1.0
+attributes:
+  - key: port
+    label: Port number
+    dataType: number
+  - key: protocol
+    label: Protocol
+    dataType: enum
+    options: [tcp, udp]
+  - key: purpose
+    label: Purpose
+    dataType: string

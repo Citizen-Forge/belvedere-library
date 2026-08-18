@@ -1,0 +1,25 @@
+id: core/server
+name: Server
+root: hardware
+extends: core/hardware
+icon: server
+description: A physical machine that provides compute resources, typically rack- or tower-mounted.
+version: 0.1.0
+attributes:
+  - key: cpu
+    label: CPU
+    dataType: string
+  - key: cpuCount
+    label: CPU count
+    dataType: number
+  - key: ramGb
+    label: RAM
+    dataType: number
+    unit: GB
+  - key: driveBays
+    label: Drive bays
+    dataType: number
+  - key: formFactor
+    label: Form factor
+    dataType: enum
+    options: [rack, tower, blade]

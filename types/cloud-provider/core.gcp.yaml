@@ -1,0 +1,11 @@
+id: core/gcp
+name: Google Cloud Platform
+root: cloud-provider
+extends: core/cloud-provider
+icon: gcp
+description: Google Cloud Platform.
+version: 0.1.0
+attributes:
+  - key: region
+    label: Region
+    dataType: string

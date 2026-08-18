@@ -1,0 +1,14 @@
+id: core/software
+name: Software
+root: software
+extends: null
+icon: software
+description: Root type for anything that runs on hardware rather than being physical itself.
+version: 0.1.0
+attributes:
+  - key: vendor
+    label: Vendor
+    dataType: string
+  - key: versionString
+    label: Version
+    dataType: string

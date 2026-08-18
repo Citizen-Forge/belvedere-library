@@ -1,0 +1,15 @@
+id: core/os
+name: Operating System
+root: software
+extends: core/software
+icon: os
+description: An operating system or hypervisor hosted directly on hardware.
+version: 0.1.0
+attributes:
+  - key: kernel
+    label: Kernel
+    dataType: enum
+    options: [linux, windows, bsd, other]
+  - key: isHypervisor
+    label: Is hypervisor
+    dataType: boolean
