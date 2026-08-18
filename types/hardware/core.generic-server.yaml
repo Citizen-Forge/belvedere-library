@@ -1,0 +1,15 @@
+id: core/generic-server
+name: Generic Server
+root: hardware
+extends: core/server
+icon: server
+description: A self-built or DIY server (e.g. a homebrew NAS/Unraid box) rather than a vendor-specific model. Add its disks as separate core/disk instances HOSTS-connected to it, so each disk's capacity/role is tracked individually rather than summarized.
+version: 0.1.0
+attributes:
+  - key: motherboard
+    label: Motherboard
+    dataType: string
+  - key: psuWattage
+    label: PSU wattage
+    dataType: number
+    unit: W

@@ -1,0 +1,23 @@
+id: core/disk
+name: Disk
+root: hardware
+extends: core/hardware
+icon: disk
+description: An individual storage disk, hosted by the server/enclosure it's installed in (HOSTS).
+version: 0.1.0
+attributes:
+  - key: capacityGb
+    label: Capacity
+    dataType: number
+    unit: GB
+  - key: mediaType
+    label: Media type
+    dataType: enum
+    options: [hdd, ssd, nvme]
+  - key: role
+    label: Role
+    dataType: enum
+    options: [data, parity, cache, boot]
+  - key: serialNumber
+    label: Serial number
+    dataType: string
