@@ -1,7 +1,7 @@
 id: core/disk
 name: Disk
 root: hardware
-extends: core/hardware
+extends: core/component
 icon: disk
 description: An individual storage disk, hosted by the server/enclosure it's installed in (HOSTS).
 version: 0.1.0

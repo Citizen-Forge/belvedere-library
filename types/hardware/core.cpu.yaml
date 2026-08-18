@@ -1,0 +1,21 @@
+id: core/cpu
+name: CPU
+root: hardware
+extends: core/component
+icon: cpu
+description: An individual CPU/socket, hosted by the server/device it's installed in (HOSTS). Track one per socket for multi-socket servers.
+version: 0.1.0
+attributes:
+  - key: cores
+    label: Cores
+    dataType: number
+  - key: threads
+    label: Threads
+    dataType: number
+  - key: clockSpeedGhz
+    label: Clock speed
+    dataType: number
+    unit: GHz
+  - key: socket
+    label: Socket
+    dataType: string

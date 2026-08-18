@@ -1,7 +1,7 @@
 id: core/network-interface
 name: Network Interface
 root: hardware
-extends: core/hardware
+extends: core/component
 icon: network-interface
 description: A physical network interface (NIC) on a piece of hardware, hosted by that hardware and physically connected (CONNECTS_TO) to a switch.
 version: 0.1.0

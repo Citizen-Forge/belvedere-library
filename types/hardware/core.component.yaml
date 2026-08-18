@@ -1,0 +1,8 @@
+id: core/component
+name: Component
+root: hardware
+extends: core/hardware
+icon: component
+description: A piece of hardware that lives inside or attaches to another device rather than standing alone — CPUs, disks, network interfaces, RAM modules. By convention it's HOSTS-connected to whatever it's installed in rather than created as a standalone asset — nothing in the type system enforces that, so treat this as guidance for library/UI authors, not a validated rule.
+version: 0.1.0
+attributes: []
