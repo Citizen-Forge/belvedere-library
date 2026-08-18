@@ -1,0 +1,11 @@
+id: core/container
+name: Container
+root: software
+extends: core/software
+icon: container
+description: A running container instance, hosted by the container platform that runs it (HOSTS).
+version: 0.1.0
+attributes:
+  - key: image
+    label: Image
+    dataType: string

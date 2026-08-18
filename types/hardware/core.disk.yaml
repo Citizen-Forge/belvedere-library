@@ -17,7 +17,11 @@ attributes:
   - key: role
     label: Role
     dataType: enum
-    options: [data, parity, cache, boot]
+    options: [data, parity, cache, boot, unassigned]
   - key: serialNumber
     label: Serial number
     dataType: string
+  - key: pool
+    label: Pool / slot name
+    dataType: string
+    required: false

@@ -1,0 +1,12 @@
+id: core/gpu
+name: GPU
+root: hardware
+extends: core/component
+icon: gpu
+description: A discrete graphics card, hosted by the server/device it's installed in (HOSTS).
+version: 0.1.0
+attributes:
+  - key: vramGb
+    label: VRAM
+    dataType: number
+    unit: GB
