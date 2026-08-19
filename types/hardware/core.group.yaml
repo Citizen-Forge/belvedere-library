@@ -1,0 +1,15 @@
+id: core/group
+name: Group
+root: hardware
+extends: core/hardware
+icon: group
+description: >-
+  A collapsible organizational container for other assets, with no hardware meaning of its own —
+  e.g. an "array" group holding a NAS's data disks, or a "GPUs" group holding several graphics
+  cards. HOSTS-connect it under whatever it organizes (a server, another group, ...), then
+  HOSTS-connect its members to it. No special handling needed elsewhere: it's just another asset,
+  and the graph UI already only reveals what something HOSTS when that thing is itself expanded —
+  a group's members stay hidden until the group is expanded, exactly like any other asset's HOSTS
+  children.
+version: 0.1.0
+attributes: []
