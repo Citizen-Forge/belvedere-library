@@ -6,10 +6,12 @@ icon: group
 description: >-
   A collapsible organizational container for other assets, with no hardware meaning of its own —
   e.g. an "array" group holding a NAS's data disks, or a "GPUs" group holding several graphics
-  cards. HOSTS-connect it under whatever it organizes (a server, another group, ...), then
-  HOSTS-connect its members to it. No special handling needed elsewhere: it's just another asset,
-  and the graph UI already only reveals what something HOSTS when that thing is itself expanded —
-  a group's members stay hidden until the group is expanded, exactly like any other asset's HOSTS
-  children.
-version: 0.1.0
+  cards. Optionally HOSTS-connect it under whatever it organizes (a server, another group, ...) so
+  it appears there, or leave it free-floating with no HOSTS parent for a cross-cutting collection
+  that isn't scoped to any single asset. Either way, add members with a MEMBER_OF relationship
+  *from* each member *to* the group — this is additive, not a re-parenting: a member keeps its own
+  real HOSTS parent (e.g. a GPU stays HOSTS-connected to its actual server) and can be MEMBER_OF
+  several groups at once. Belvedere's graph UI reveals a group's MEMBER_OF members when the group
+  itself is expanded, exactly like any other asset's HOSTS children.
+version: 0.1.1
 attributes: []
