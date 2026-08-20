@@ -13,5 +13,14 @@ description: >-
   real HOSTS parent (e.g. a GPU stays HOSTS-connected to its actual server) and can be MEMBER_OF
   several groups at once. Belvedere's graph UI reveals a group's MEMBER_OF members when the group
   itself is expanded, exactly like any other asset's HOSTS children.
-version: 0.1.1
-attributes: []
+version: 0.2.0
+attributes:
+  - key: notes
+    label: Notes
+    dataType: string
+# core/group has to extend core/hardware (every type must extend one of the three system roots),
+# but a pure organizational container has no manufacturer/model of its own — drop them rather than
+# showing them permanently unset in the inspector.
+excludeAttributes:
+  - manufacturer
+  - model
